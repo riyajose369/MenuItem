@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -16,8 +16,8 @@ namespace MenuItemListing.Controllers
         public List<MenuItem> GetItem()
         {
             List<MenuItem> MenuList = new List<MenuItem>()
-            {   new MenuItem() {Id=1, Name="Phone", Active=true, DateOfLaunch=new DateTime(2017,01,01), FreeDelivery=false,Price=500},
-                new MenuItem() {Id=2, Name="LapTop", Active=false, DateOfLaunch=new DateTime(2018,10,03), FreeDelivery=false,Price=200}
+            {   new MenuItem() {Id=1, Name="Pizza", Active=true, DateOfLaunch=new DateTime(2017,01,01), FreeDelivery=false,Price=500},
+                new MenuItem() {Id=2, Name="Pasta", Active=false, DateOfLaunch=new DateTime(2018,10,03), FreeDelivery=false,Price=200}
 
             };
             return MenuList;
